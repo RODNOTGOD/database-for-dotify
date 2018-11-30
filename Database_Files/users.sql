@@ -1,0 +1,12 @@
+INSERT INTO Dotify.User(Username, FirstName, LastName, Email, PasswordHash) VALUES('masterdeaky', 'Charlee', 'Green', 'arebenti@icloud.com', '$2y$10$7MwKaBqHU/UF1QthG0U7o.CKjmfuaUHsPbmpqHeQnN/LwGd4oLHLC');
+INSERT INTO Dotify.User(Username, FirstName, LastName, Email, PasswordHash) VALUES('pensiveturkey', 'Jameson', 'Little', 'alhajj@aol.com', '$2y$10$UgbJTvbRip4cJ3wFyPfcdOfVCI9kBKCeJSilX/PAAUTbOXEz44W3K');
+INSERT INTO Dotify.User(Username, FirstName, LastName, Email, PasswordHash) VALUES('blandoismask', 'Reuben', 'Acevedo', 'muzzy@sbcglobal.net', '$2y$10$SPEWy0/8HdVw8YTPwgnd1uNTzzzn7let1yELNSK.5nl7r.9Nx9.Fm');
+INSERT INTO Dotify.User(Username, FirstName, LastName, Email, PasswordHash) VALUES('hennessybrinkworth', 'Branson', 'Reed', 'flakeg@verizon.net', '$2y$10$m6810M3r2N0b4t6sXkKlre4jXVMZ5eRC2PMnHI62atkGJP81UxoWS');
+INSERT INTO Dotify.User(Username, FirstName, LastName, Email, PasswordHash) VALUES('whereasmaxwell', 'Kelton', 'Moody', 'afeldspar@icloud.com', '$2y$10$pte.t3LLWRkJ8x2rdBPO5OlO.yy2Bvijn4jQ5I1JfLM76KfDoAT46');
+INSERT INTO Dotify.User(Username, FirstName, LastName, Email, PasswordHash) VALUES('winisabella', 'Janae', 'Gill', 'wilsonpm@att.net', '$2y$10$XP0yqtSiH7WYwwILTNGTgu714KnGEV.8m3p4ohjPu6cU4OWxnzFkS');
+INSERT INTO Dotify.User(Username, FirstName, LastName, Email, PasswordHash) VALUES('analoguetill', 'Leo', 'Bryan', 'chaikin@me.com', '$2y$10$djrpYHQaALhhifqCpF5x1OG6y7tuym4HdhaK3Emtlbn0kKoUTT.Fa');
+INSERT INTO Dotify.User(Username, FirstName, LastName, Email, PasswordHash) VALUES('birminghamyakama', 'Semaj', 'Guerra', 'amimojo@msn.com', '$2y$10$xZ7L976oR8Hd4uLQ535VTORU5ZM9G2lcB4c7jl8RDVeTNIAwWDPM2');
+INSERT INTO Dotify.User(Username, FirstName, LastName, Email, PasswordHash) VALUES('jappinessmiracle', 'Luciano', 'Carlson', 'jamuir@outlook.com', '$2y$10$i2HC1F8ftWie857fqDNciOhaRBOauSzHkrTyA7UNxD1j7Tr2nerp6');
+INSERT INTO Dotify.User(Username, FirstName, LastName, Email, PasswordHash) VALUES('assistantzocket', 'Harmony', 'Pearson', 'gilmoure@att.net', '$2y$10$eTGKAWK6W2Z0Juieg2TfN.PQWMr0EpcV.jVOZ8.k9gEKzSYtAlWJ6');
+INSERT INTO Dotify.User(Username, FirstName, LastName, Email, PasswordHash) VALUES('sandhillbrother', 'Kendall', 'Shaffer', 'north@live.com', '$2y$10$FmE9o7CwfxuijMh2rzPEBeHR10xvRmsq2rSvdZmgyVNryT49mvuVu');
+INSERT INTO Dotify.User(Username, FirstName, LastName, Email, PasswordHash) VALUES('maiseybender', 'Lexie', 'Patton', 'tubajon@me.com', '$2y$10$2mE2j7Iua4WcNRWaDG5rBuZhenuQTf4oOT9cYXEVmSttInPzmaUne');
