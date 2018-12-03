@@ -17,6 +17,23 @@ CREATE TABLE Dotify.User (
     PRIMARY KEY (UserId)
 );
 
+CREATE TABLE Dotify.Article (
+    ArticleId   INT       NOT NULL AUTO_INCREMENT,
+    Title       CHAR(250) NOT NULL,
+    Head        Char(250) NOT NULL,
+    CreatedTime TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    UpdatedTime TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+
+    PRIMARY KEY (ArticleId)
+);
+
+CREATE TABLE Dotify.ArticleBody(
+    ArticleBodyId INT     NOT NULL AUTO_INCREMENT,
+    ArticleId     INT     NOT NULL,
+    Body          TEXT    NOT NULL,
+    PRIMARY KEY (ArticleBodyId)
+);
+
 CREATE TABLE Dotify.Song (
     SongId      INT          NOT NULL,
     AlbumId     INT          NOT NULL,
