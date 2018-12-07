@@ -31,7 +31,7 @@ for file in music_files:
     title = (audio_tag.tag.title or "Unknown").replace("'", "''")
     track_num = audio_tag.tag.track_num[0] or 0
     genre = (str(audio_tag.tag.genre) or "Unknown").replace("'", "''")
-    song_path = (os.path.realpath(file)).replace("'", "''")
+    song_path = (os.path.relpath(file)).replace("'", "''")
 
     record_date = audio_tag.tag.getBestDate()
     if record_date is not None:

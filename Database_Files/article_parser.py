@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import argparse
+import re
 from collections import namedtuple
 from datetime import datetime
 
@@ -27,13 +28,16 @@ with open(args.file, 'r') as f:
             body.append(line)
 
 id = 1
+paragraph_re = re.compile(r'\s{3,}')
 for title, body in articles:
     if title and body:
-        body = " ".join(map(lambda line: bytes(line, 'utf-8').decode('utf-8', 'ignore'), body))
-        body = ''.join(filter(lambda char: char.isprintable(), body))
+        title = "".join(map(lambda line: bytes(line, 'utf-8').decode('utf-8', 'ignore'), title))
+        body = " ".join(body)
 
         title = title.replace("'", "''")
         body = body.replace("'", "''")
+        body = body.replace("'", "''")
+        paragraph_re.sub("<br/>", body)
         head = body[0:50]
 
         print(f"INSERT INTO Article(Title, Head) VALUE('{title}', '{head}');")

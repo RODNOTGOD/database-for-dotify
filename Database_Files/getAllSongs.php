@@ -8,9 +8,10 @@ if ($conn->connect_error) {
     exit;
 }
 
-$result = $conn->query("select a.Name as artist, b.Title as album, s.Title as song, s.SongId as num from Artist a, Album b, Song s WHERE a.ArtistId = b.ArtistId and b.AlbumId = s.AlbumId and s.ArtistId = a.ArtistId ORDER by a.Name, b.Title, s.SongId ASC;");
+$result = $conn->query("select a.Name as artist, b.Title as album, s.Title as song, s.SongUrl as url, s.Track as track from Artist a, Album b, Song s WHERE a.ArtistId = b.ArtistId and b.AlbumId = s.AlbumId and s.ArtistId = a.ArtistId ORDER by a.Name, b.Title, s.SongId ASC;");
 while ($row = $result->fetch_assoc()) {
-    // echo $row['Title'] . "<br>";
+    if (json_encode($row) == null)
+        print($row['song']);
     $output[] = $row;
 }
 

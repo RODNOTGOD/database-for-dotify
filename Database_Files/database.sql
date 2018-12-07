@@ -1,6 +1,6 @@
 DROP DATABASE Dotify;
 CREATE DATABASE Dotify;
-ALTER DATABSE Dotify CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+ALTER DATABASE Dotify CHARACTER SET = utf8mb4 COLLATE = utf8mb4_unicode_ci;
 USE Dotify;
 
 CREATE TABLE Dotify.User (
@@ -16,6 +16,7 @@ CREATE TABLE Dotify.User (
 
     PRIMARY KEY (UserId)
 );
+ALTER TABLE Dotify.User CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
 CREATE TABLE Dotify.Article (
     ArticleId   INT       NOT NULL AUTO_INCREMENT,
@@ -26,6 +27,7 @@ CREATE TABLE Dotify.Article (
 
     PRIMARY KEY (ArticleId)
 );
+ALTER TABLE Dotify.Article CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
 CREATE TABLE Dotify.ArticleBody(
     ArticleBodyId INT     NOT NULL AUTO_INCREMENT,
@@ -33,6 +35,7 @@ CREATE TABLE Dotify.ArticleBody(
     Body          TEXT    NOT NULL,
     PRIMARY KEY (ArticleBodyId)
 );
+ALTER TABLE Dotify.ArticleBody CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
 CREATE TABLE Dotify.Song (
     SongId      INT          NOT NULL,
@@ -46,6 +49,7 @@ CREATE TABLE Dotify.Song (
 
     PRIMARY KEY (SongId, AlbumId, ArtistId)
 );
+ALTER TABLE Dotify.Song CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
 CREATE TABLE Dotify.Album (
     AlbumId      INT         NOT NULL,
@@ -57,6 +61,7 @@ CREATE TABLE Dotify.Album (
 
     PRIMARY KEY (AlbumId, ArtistId)
 );
+ALTER TABLE Dotify.Album CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
 CREATE TABLE Dotify.Artist (
     ArtistId     INT         NOT NULL AUTO_INCREMENT,
@@ -66,3 +71,4 @@ CREATE TABLE Dotify.Artist (
 
     PRIMARY KEY (ArtistId)
 );
+ALTER TABLE Dotify.Artist CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
