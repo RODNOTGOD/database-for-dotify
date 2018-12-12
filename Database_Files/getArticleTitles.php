@@ -1,5 +1,5 @@
 <?php
-$conn = new mysqli("localhost", "kragendor", "", "Dotify");
+$conn = new mysqli("localhost", "zerg", "", "Dotify");
 
 if ($conn->connect_error) {
     echo "Error: Unable to connect to server" . PHP_EOL;

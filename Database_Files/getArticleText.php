@@ -1,5 +1,5 @@
 <?php
-$conn = new mysqli("localhost", "kragendor", "", "Dotify");
+$conn = new mysqli("localhost", "zerg", "", "Dotify");
 
 $articleId = $_GET["id"];
 

@@ -7,7 +7,7 @@ $password = $_GET['password'];
 $bcrypt_hash = password_hash($password, PASSWORD_DEFAULT);
 
 
-$conn = new mysqli("localhost", "kragendor", "", "Dotify");
+$conn = new mysqli("localhost", "zerg", "", "Dotify");
 
 if ($conn->connect_error) {
     echo "Error: Unable to connect to server" . PHP_EOL;
